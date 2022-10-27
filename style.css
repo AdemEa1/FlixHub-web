@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+main {
+  padding: 32px;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* NAVIGATION */
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.nav__row--left {
+  display: flex;
+}
+
+.plat__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+#plat-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.nav__link--list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__linker {
+  margin-left: 25px;
+}
+
+.nav__link:not(:first-child) {
+  margin-left: 20px;
+}
+
+.nav__link--anchor {
+  font-size: 20px;
+  color: #000;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav__animation:active {
+  transform: scale(0.95);
+}
+
+/* LANDING */
+#landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 30px;
+}
+
+.header__para {
+  font-size: 24px;
+  line-height: 2;
+  max-width: 450px;
+}
