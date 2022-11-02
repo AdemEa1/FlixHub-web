@@ -4,76 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLIXHUB.co</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/492fd5106e.js"crossorigin="anonymous"></script>
 </head>
-<body class="background__img">
-
-    <main>
- <section id="landing">
+<body>
+    
+<section id="landing">
+    
     <nav>
-        <div class="nav__row">
-        <div class="nav__row--left">
-        <figure class="plat__container">
-            <img id="plat-logo" src="./Logo assets/FLIXHUB.co (1).png" alt="">
-        </figure>
-        <ul class="nav__link--list nav__linker">
-            <li class="
-            nav__link 
-            nav__link--anchor 
-            nav__animation">
-            Home
+        <div class="nav__bar">
+        <div class="nav__bar--left">
+            <figure class="nav__img--container">
+                <img class="nav__img" src="./Logo assets/ABC.png" alt="">
+            </figure>
+            <ul class="nav__lists nav__list">
+            <li class="nav__link">
+            <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Home</a>
             </li>
-            <li class="
-            nav__link 
-            nav__link--anchor 
-            nav__animation">
-            TV Shows 
+            <li class="nav__link">
+            <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Tv Shows</a>
             </li>
-            <li class="
-            nav__link 
-            nav__link--anchor 
-            nav__animation">
-            Movies
+            <li class="nav__link">
+            <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Movies</a>
             </li>
-            <li class="
-            nav__link 
-            nav__link--anchor 
-            nav__animation">
-            Recently Added
-            </li>
-        </ul>
-    </div>
-        <div class="nav__row--left">
-            <ul class="nav__link--list">
-            <li class="
-            nav__link 
-            nav__item--icon">
-            <i class="fa-solid fa-bell nav__icon"></i>
-            </li>
-            <li class="
-            nav__link 
-            nav__item--icon">
-            <i class="fa-solid fa-user"></i>
+            <li class="nav__link">
+            <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Recently Added</a>
             </li>
             </ul>
         </div>
-    </div>
-    </nav>
-    <header class="header">
-        <div class="header__content">
-            <h1 class="title">Hey</h1>
-            <h1 class="title title--secondary">I'm Adem</h1>
-            <p class="header__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptatibus reiciendis laborum quo alias. Corporis explicabo nulla itaque voluptatum omnis.
-            <br>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta autem maxime a nulla sed. Iusto?
-            </p>
+        <div class="nav__bar--right">
+            <ul class="nav__list">
+                <li class="
+                nav__link
+                nav__icon--item
+                nav__icon click">
+                <i class="fa-solid fa-bell"></i>
+                </li>
+                <li class="
+                nav__link
+                nav__icon--item
+                nav__icon click">
+                <i class="fa-solid fa-user"></i>
+                </li>
+            </ul>
         </div>
-    </header>
- </section>   
-</main>
+        </div>
+        </nav>
+
+<header class="header">
+    <div class="movie__container"></div>
+        <div class="standard__container">
+            <h1 class="title">FLIXHUB.co</h1>
+            <h3 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus neque praesentium nulla totam, similique quidem perspiciatis!</h3>
+            <form class="search__bar">
+                <input 
+                type="text"
+                class="search__input"
+                placeholder="Search ..."
+                onchange=""
+                autofocus>
+            <button class="search__btn" type="submit">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </button>
+            </form>
+        </div>
+    <div class="back__btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        <h3 class="back__text">Return</h3>
+    </div>
+</header>
+
+</section>
 
 </body>
 </html>
