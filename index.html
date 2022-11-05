@@ -20,28 +20,28 @@
                 <img class="nav__img" src="./Logo assets/ABC.png" alt="">
             </figure>
             <ul class="nav__lists nav__list">
-            <li class="nav__link">
+            <li class="nav__links">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
             ">Home</a>
             </li>
-            <li class="nav__link">
+            <li class="nav__links">
             <a href="#projects" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
             ">Tv Shows</a>
             </li>
-            <li class="nav__link">
+            <li class="nav__links">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
             ">Movies</a>
             </li>
-            <li class="nav__link">
+            <li class="nav__links">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -51,29 +51,43 @@
             </ul>
         </div>
         <div class="nav__bar--right">
-            <ul class="nav__list">
+            <ul class="nav__lists">
                 <li class="
-                nav__link
+                nav__links
                 nav__icon--item
-                nav__icon click">
+                nav__icon">
                 <i class="fa-solid fa-bell"></i>
                 </li>
+                <button class="nav__burger click" onclick="openMenu()">
                 <li class="
-                nav__link
+                nav__links
                 nav__icon--item
                 nav__icon click">
+                <figure>
                 <i class="fa-solid fa-user"></i>
                 </li>
+                </figure>
+                </button>
             </ul>
         </div>
         </div>
         </nav>
 
+        <div class="menu">
+            <div class="menu__link--lists">
+              <a href="" class="menu__link--ancor">About</a>
+              <a href="" class="menu__link--ancor">Login</a>
+              <a href="" class="menu__link--ancor menu__link--ancor-primary">Sign Up</a>
+            </div>
+            <button class="menu__btn" onclick="closeMenu()">
+                <i class="fa-regular fa-circle-xmark tab__exit click"></i>
+            </button>
+        </div>
+
 <header class="header">
-    <div class="movie__container"></div>
-        <div class="standard__container">
-            <h1 class="title">FLIXHUB.co</h1>
-            <h3 class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus neque praesentium nulla totam, similique quidem perspiciatis!</h3>
+        <div class="header__container">
+            <h1 class="header__title">FLIXHUB.co</h1>
+            <h3 class="header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus neque praesentium nulla totam, similique quidem perspiciatis!</h3>
             <form class="search__bar">
                 <input 
                 type="text"
@@ -82,11 +96,11 @@
                 onchange=""
                 autofocus>
             <button class="search__btn" type="submit">
-                <i class="fa-solid fa-magnifying-glass search"></i>
+                <i class="fa-solid fa-magnifying-glass search__glass click"></i>
             </button>
             </form>
         </div>
-    <div class="back__btn">
+    <div class="back__btn click">
         <i class="fa-solid fa-arrow-left"></i>
         <h3 class="back__text">Return</h3>
     </div>
