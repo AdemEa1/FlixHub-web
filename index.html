@@ -25,28 +25,28 @@
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-            ">Home</a>
+            "onclick="initial()">Home</a>
             </li>
             <li class="nav__links">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-            no-cursor">Tv Shows</a>
+            no-cursor"onclick="initial()">Tv Shows</a>
             </li>
             <li class="nav__links">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-            no-cursor">Movies</a>
+            no-cursor"onclick="initial()">Movies</a>
             </li>
             <li class="nav__links">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
-            no-cursor">Recently Added</a>
+            no-cursor"onclick="initial()">Recently Added</a>
             </li>
             </ul>
         </div>
@@ -55,14 +55,18 @@
                 <li class="
                 nav__links
                 nav__icon--item
-                nav__icon">
+                link__hover-effect
+                link__hover-effect--black
+                nav__icon"onclick="initial()">
                 <i class="fa-solid fa-bell no-cursor"></i>
                 </li>
                 <button class="nav__burger click" onclick="openMenu()">
                 <li class="
                 nav__links
                 nav__icon--item
-                nav__icon click">
+                link__hover-effect
+                link__hover-effect--black
+                nav__icon click"onclick="initial()">
                 <figure>
                 <i class="fa-solid fa-user"></i>
                 </li>
@@ -86,21 +90,22 @@
 
 <header class="header">
         <div class="header__container">
+            <div class="movieboxs__container"></div>
             <h1 class="header__title">FLIXHUB.co</h1>
             <h3 class="header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus neque praesentium nulla totam, similique quidem perspiciatis!</h3>
-            <form class="search__bar">
+            <form class="search__bar" onsubmit="return false;">
                 <input 
                 type="text"
                 class="search__input"
                 placeholder="Search ..."
-                onchange=""
+                onchange="searchInput(event)"
                 autofocus>
             <button class="search__btn" type="submit">
                 <i class="fa-solid fa-magnifying-glass search__glass click"></i>
             </button>
             </form>
         </div>
-    <div class="back__btn click">
+    <div class="back__btn click" onclick="backHome()">
         <i class="fa-solid fa-arrow-left"></i>
         <h3 class="back__text">Return</h3>
     </div>
@@ -110,3 +115,13 @@
 
 </body>
 </html>
+
+<!-- <div class="moviebox--container">
+<div class="moviebox__flag">
+<div class="moviebox__front"></div>
+<div class="moviebox__info--container">
+<div class="moviebox__title"></div>
+<div class="moviebox__year"></div>
+</div>
+</div>
+</div> -->
