@@ -2,65 +2,69 @@
 //https://api.themoviedb.org/3/movie/550?api_key=10e5b26f65216e0d907d2c1c45c6ea2c
 
 function openMenu() {
-    document.body.classList += " menu--open"
-  }
-  
-  function closeMenu() {
-    document.body.classList.remove('menu--open')
-  }
-const movieboxsContainerEl = document.querySelector(".movieboxs__container");
-const headerContainerEl = document.querySelector(".header__container");
-const backTextEl = document.querySelector(".back__text");
-
-async function searchInput(event) {
-  const inputValue = event.target.value;
-  const media = await fetch(
-    `https://api.themoviedb.org/3/movie/550?api_key=10e5b26f65216e0d907d2c1c45c6ea2c`
-  );
-  const mediaData = await media.json();
-  if (!mediaData.search) {
-    movieboxsContainerEl.style.display = "none";
-    headerContainerEl.style.display = "block";
-    backTextEl.style.display = "none";
-  }
-  else if (mediaData.search) {
-    movieboxsContainerEl.style.display = "flex";
-    headerContainerEl.style.display = "none";
-    backTextEl.style.display = "flex";
-  }
-  movieboxsContainerEl.innerHTML = mediaData.search.slice(0, 9)
-  .map((media) => mediaHTML(media))
-  .join("");
-
-  event.default();
+  document.body.classList += " menu--open"
 }
-  
-function mediaData(movie) {
-  return ` <div class="moviebox--container">
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}
+
+const movieboxContainerEl = document.querySelector(".movieboxs__container");
+const headerContainerEl = document.querySelector(".header__container");
+const returnhomeEl = document.querySelector(".returnHome");
+
+async function searchInputArea(event) {
+  const Id = event.target.value;
+  const moviebox = await fetch(
+    `https://www.omdbapi.com/?apikey=38a97b17&s=${Id}`
+  );
+  const movieboxData = await moviebox.json();
+  if (!movieboxData.Search) {
+    movieboxContainerEl.style.display = "none";
+    headerContainerEl.style.display = "block";
+    returnhomeEl.style.display = "none";
+  } 
+  else if (movieboxData.Search) {
+    movieboxContainerEl.style.display = "flex";
+    headerContainerEl.style.display = "none";
+    returnhomeEl.style.display = "flex";
+  }
+  movieboxContainerEl.innerHTML = movieboxData.Search.slice(0, 9)
+    .map((moviebox) => movieboxsHTML(moviebox))
+    .join("");
+
+  event.preventDefault();
+}
+
+function movieboxsHTML(movie) {
+  return `<div class="moviebox--container">
   <div class="moviebox__flag">
   <div class="moviebox__front">
-  <img src="${moviebox.Front}" class="moviebox__front--img"/>
+  <img
+  src="${movie.Poster}"
+  class="movie__front--imgs"/>
   </div>
   <div class="moviebox__info--container">
-  <div class="moviebox__title">${moviebox.Title}</div>
-  <div class="moviebox__year">Year: ${moviebox.Year}</div>
+  <div class="movieboxs__title">${movie.Title}</div>
+  <div class="moviebox__year">Year: ${movie.Year}</div>
   </div>
   </div>
   </div>`;
 }
 
-function searchActive() {
-  document.querySelector(".search__input").classList.toggle("sActive");
+function searchActivate() {
+  document.querySelector(".link__hover-effect").classList.toggle("sActive");
 }
 
-function naAlert() {
-  alert (
-    "hello"
+function aNotif() {
+  alert(
+    "These features are for only for display."
   );
 }
 
-function backText() {
-  movieboxsContainerEl.style.display = "none";
-    headerContainerEl.style.display = "block";
-    backTextEl.style.display = "none";
+function returnHome() {
+  movieboxContainerEl.style.display = "none";
+  headerContainerEl.style.display = "block";
+  returnhomeEl.style.display = "none";
 }
+
