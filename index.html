@@ -24,8 +24,8 @@
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
-            link__hover-effect--black
-            no-cursor" onclick="aNotif()">Home</a>
+            link__hover-effect--black" 
+            onclick="returnHome()">Home</a>
             </li>
             <li class="nav__links">
             <a href="#" class="
@@ -51,68 +51,63 @@
             </ul>
         </div>
         <div class="nav__bar--right">
-            <ul class="nav__lists">
-                <li class="
-                nav__links
-                nav__icon--item
-                link__hover-effect
-                link__hover-effect--black
-                nav__icon" onclick="aNotif()">
-                <i class="fa-solid fa-bell no-cursor"></i>
-                </li>
-                <button class="nav__burger click" onclick="openMenu()">
-                <li class="
-                nav__links
-                nav__icon--item
-                link__hover-effect
-                link__hover-effect--black
-                nav__icon click">
-                <figure>
-                <i class="fa-solid fa-user"></i>
-                </li>
-                </figure>
-                </button>
-            </ul>
-        </div>
-        </div>
-        </nav>
+        <ul class="nav__lists">
+        <li class="
+        nav__links
+        nav__icon--item
+        link__hover-effect
+        link__hover-effect--black
+        nav__icon" onclick="aNotif()">
+        <i class="fa-solid fa-bell no-cursor"></i>
+        </li>
+        <button class="nav__burger click" onclick="openMenu()">
+        <li class="
+        nav__links
+        nav__icon--item
+        link__hover-effect
+        link__hover-effect--black
+        nav__icon click">
+        <figure>
+        <i class="fa-solid fa-user"></i>
+        </li>
+        </figure>
+        </button>
+        </ul>
+    </div>
+    </div>
+</nav>
 
-        <div class="menu">
-            <div class="menu__link--lists">
-              <a href="" class="menu__link--ancor no-cursor">About</a>
-              <a href="" class="menu__link--ancor no-cursor">Login</a>
-              <a href="" class="menu__link--ancor menu__link--ancor-primary no-cursor">Sign Up</a>
-            </div>
-            <button class="menu__btn" onclick="closeMenu()">
-                <i class="fa-regular fa-circle-xmark tab__exit click"></i>
-            </button>
+    <div class="menu">
+    <div class="menu__link--lists">
+        <a href="" class="menu__link--ancor no-cursor">About</a>
+        <a href="" class="menu__link--ancor no-cursor">Login</a>
+        <a href="" class="menu__link--ancor menu__link--ancor-primary no-cursor">Sign Up</a>
         </div>
+        <button class="menu__btn" onclick="closeMenu()">
+        <i class="fa-regular fa-circle-xmark tab__exit click"></i>
+        </button>
+    </div>
 
 <header class="header">
-        <div class="movieboxs__container"></div>
-        <div class="header__container">
-            <h1 class="header__title">FLIXHUB.co</h1>
-            <h3 class="header__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus neque praesentium nulla totam, similique quidem perspiciatis!</h3>
-            <form class="search__bar" onsubmit="return false;">
-                <input 
-                type="text"
-                class="search__input"
-                placeholder="Search ..."
-                onchange="searchInputArea(event)"
-                autofocus>
-            <button class="search__btn" type="submit">
-                <i class="fa-solid fa-magnifying-glass search__glass click" onclick="searchActivate()"></i>
-            </button>
-            </form>
-        </div>
-    <div class="returnHome click" onclick="returnHome()">
-        <i class="fa-regular fa-circle-arrow-left"></i>
-        <h3 class="back__text">Return</h3>
+    <div class="movieboxs__container"></div>
+    <div class="header__container">
+        <h1 class="header__title">FLIXHUB.co</h1>
+        <h3 class="header__para">FlixHub is the greatest website for you and your family to stream your favourite movies and Tv shows with such ease.</h3>
+        <form class="search__bar search__bar--input" onsubmit="return false;">
+        <input 
+        type="text"
+        class="search__input"
+        placeholder="Search ..."
+        onchange="searchInputArea(event)"
+        autofocus>
+    <button class="search__btn" type="submit">
+        <i class="fa-solid fa-magnifying-glass search__glass click" onclick="searchActivate()"></i>
+    </button>
+        </form>
     </div>
 </header>
 
 </section>
-
 </body>
 </html>
 

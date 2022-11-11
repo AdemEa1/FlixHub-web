@@ -27,7 +27,6 @@ async function searchInputArea(event) {
   else if (movieboxData.Search) {
     movieboxContainerEl.style.display = "flex";
     headerContainerEl.style.display = "none";
-    returnhomeEl.style.display = "flex";
   }
   movieboxContainerEl.innerHTML = movieboxData.Search.slice(0, 9)
     .map((moviebox) => movieboxsHTML(moviebox))
@@ -53,7 +52,7 @@ function movieboxsHTML(movie) {
 }
 
 function searchActivate() {
-  document.querySelector(".link__hover-effect").classList.toggle("sActive");
+  document.querySelector(".search__bar--input").classList.toggle("sActive");
 }
 
 function aNotif() {
