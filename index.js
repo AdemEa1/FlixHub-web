@@ -66,4 +66,3 @@ function returnHome() {
   headerContainerEl.style.display = "block";
   returnhomeEl.style.display = "none";
 }
-
