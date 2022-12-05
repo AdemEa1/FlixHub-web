@@ -520,7 +520,6 @@ input {
   .menu {
     margin: 22px 14px;
     padding: 32px;
-    width: calc(100% - 10%);
   }
   .menu__link--ancor {
     margin: 9px 0px;
